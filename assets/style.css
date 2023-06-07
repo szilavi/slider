@@ -1,0 +1,105 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40rem;
+  width: 70rem;
+}
+
+.container__slide__img {
+  position: relative;
+  height: 50rem;
+}
+
+.img__counter {
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  font-size: 2em;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.1em;
+  box-sizing: border-box;
+}
+
+.img__arrows--left {
+  position: absolute;
+  top: 35%;
+  left: 1em;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.img__arrows--right {
+  position: absolute;
+  top: 35%;
+  color: #ffffff;
+  font-size: 2em;
+  right: 1em;
+}
+
+.actualImg {
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.img__caption {
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.container__slide__buttons {
+  cursor: pointer;
+}
+
+.fa-regular {
+  margin: 1em;
+  cursor: pointer;
+}
+
+.fa-solid {
+  margin: 1em;
+  cursor: pointer;
+}
+
+.picAnimation {
+  animation: picAni 0.5s;
+}
+
+@keyframes picAni {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
